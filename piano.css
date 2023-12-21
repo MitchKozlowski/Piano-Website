@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #333;
+}
+
+        .piano-container {
+            background-color: #ffffff; /* Set the background color for the piano keys */
+            background-size: cover;
+			padding: 40px; /* Add some padding for visual separation */
+        }
+
+        .piano-key {
+            width: 70px;
+            height: 300px;
+            border: 1px solid #000;
+            display: inline-block;
+           /* margin-right: 5px;  This will effect space between keys */
+            cursor: pointer;
+            transition: background-color 0.2s; /* Add a smooth transition effect */
+        }
+
+        .black-key {
+            background-color: black;
+            width: 35px;
+            height: 140px;
+        }
+}
+
+/* Add hover effect for better user experience */
+.piano-key:hover {
+    background-color: #eee;
+}
+
+.black-key:hover {
+    background-color: #555;
+}
